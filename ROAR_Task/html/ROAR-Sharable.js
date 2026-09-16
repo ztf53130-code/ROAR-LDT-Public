@@ -1,4 +1,4 @@
-﻿/********************** 
+/********************** 
  * Roar-Sharable Test *
  **********************/
 
@@ -73,10 +73,366 @@ flowScheduler.add(quitPsychoJS, '', true);
 // quit if user presses Cancel in dialog box:
 dialogCancelScheduler.add(quitPsychoJS, '', false);
 
+const roarResources = [
+  {
+    "name": "25valley.wav",
+    "path": "resources/25valley.wav"
+  },
+  {
+    "name": "2instructions1.png",
+    "path": "resources/2instructions1.png"
+  },
+  {
+    "name": "2instructions2.png",
+    "path": "resources/2instructions2.png"
+  },
+  {
+    "name": "2instructions3.png",
+    "path": "resources/2instructions3.png"
+  },
+  {
+    "name": "2instructions4.png",
+    "path": "resources/2instructions4.png"
+  },
+  {
+    "name": "2instructions5.png",
+    "path": "resources/2instructions5.png"
+  },
+  {
+    "name": "2instructions6.png",
+    "path": "resources/2instructions6.png"
+  },
+  {
+    "name": "34valley.wav",
+    "path": "resources/34valley.wav"
+  },
+  {
+    "name": "3instructions1.png",
+    "path": "resources/3instructions1.png"
+  },
+  {
+    "name": "3instructions2.png",
+    "path": "resources/3instructions2.png"
+  },
+  {
+    "name": "3instructions3.png",
+    "path": "resources/3instructions3.png"
+  },
+  {
+    "name": "3instructions4.png",
+    "path": "resources/3instructions4.png"
+  },
+  {
+    "name": "4instructions1.png",
+    "path": "resources/4instructions1.png"
+  },
+  {
+    "name": "4instructions2.png",
+    "path": "resources/4instructions2.png"
+  },
+  {
+    "name": "4instructions3.png",
+    "path": "resources/4instructions3.png"
+  },
+  {
+    "name": "4instructions4.png",
+    "path": "resources/4instructions4.png"
+  },
+  {
+    "name": "5instructions1.png",
+    "path": "resources/5instructions1.png"
+  },
+  {
+    "name": "5instructions2.png",
+    "path": "resources/5instructions2.png"
+  },
+  {
+    "name": "6instructions1.png",
+    "path": "resources/6instructions1.png"
+  },
+  {
+    "name": "7instructions1.png",
+    "path": "resources/7instructions1.png"
+  },
+  {
+    "name": "7instructions10.png",
+    "path": "resources/7instructions10.png"
+  },
+  {
+    "name": "7instructions2.png",
+    "path": "resources/7instructions2.png"
+  },
+  {
+    "name": "7instructions3.png",
+    "path": "resources/7instructions3.png"
+  },
+  {
+    "name": "7instructions4.png",
+    "path": "resources/7instructions4.png"
+  },
+  {
+    "name": "7instructions5.png",
+    "path": "resources/7instructions5.png"
+  },
+  {
+    "name": "7instructions6.png",
+    "path": "resources/7instructions6.png"
+  },
+  {
+    "name": "7instructions7.png",
+    "path": "resources/7instructions7.png"
+  },
+  {
+    "name": "7instructions8.png",
+    "path": "resources/7instructions8.png"
+  },
+  {
+    "name": "7instructions9.png",
+    "path": "resources/7instructions9.png"
+  },
+  {
+    "name": "8instructions1.png",
+    "path": "resources/8instructions1.png"
+  },
+  {
+    "name": "AsymmInstructionVid.mp4",
+    "path": "resources/AsymmInstructionVid.mp4"
+  },
+  {
+    "name": "Block1.mp4",
+    "path": "resources/Block1.mp4"
+  },
+  {
+    "name": "Block2.mp4",
+    "path": "resources/Block2.mp4"
+  },
+  {
+    "name": "Block3.mp4",
+    "path": "resources/Block3.mp4"
+  },
+  {
+    "name": "ClericIdleAnimation.mp4",
+    "path": "resources/ClericIdleAnimation.mp4"
+  },
+  {
+    "name": "ClericIdleOpening.mp4",
+    "path": "resources/ClericIdleOpening.mp4"
+  },
+  {
+    "name": "Credit.wav",
+    "path": "resources/Credit.wav"
+  },
+  {
+    "name": "Credits.png",
+    "path": "resources/Credits.png"
+  },
+  {
+    "name": "GameEND.mp4",
+    "path": "resources/GameEND.mp4"
+  },
+  {
+    "name": "GameENDFinalStaticImage.png",
+    "path": "resources/GameENDFinalStaticImage.png"
+  },
+  {
+    "name": "KnightUnlock2.mp4",
+    "path": "resources/KnightUnlock2.mp4"
+  },
+  {
+    "name": "LexPracInst.xlsx",
+    "path": "resources/LexPracInst.xlsx"
+  },
+  {
+    "name": "LexPracInst2.xlsx",
+    "path": "resources/LexPracInst2.xlsx"
+  },
+  {
+    "name": "RogueUnlock1.mp4",
+    "path": "resources/RogueUnlock1.mp4"
+  },
+  {
+    "name": "after.wav",
+    "path": "resources/after.wav"
+  },
+  {
+    "name": "arrowkey_lex.png",
+    "path": "resources/arrowkey_lex.png"
+  },
+  {
+    "name": "arrowkey_triangles.png",
+    "path": "resources/arrowkey_triangles.png"
+  },
+  {
+    "name": "auler.wav",
+    "path": "resources/auler.wav"
+  },
+  {
+    "name": "block1.xlsx",
+    "path": "resources/block1.xlsx"
+  },
+  {
+    "name": "block2.xlsx",
+    "path": "resources/block2.xlsx"
+  },
+  {
+    "name": "block3.xlsx",
+    "path": "resources/block3.xlsx"
+  },
+  {
+    "name": "blockprac.xlsx",
+    "path": "resources/blockprac.xlsx"
+  },
+  {
+    "name": "by.wav",
+    "path": "resources/by.wav"
+  },
+  {
+    "name": "clericNoticeProblem.mp4",
+    "path": "resources/clericNoticeProblem.mp4"
+  },
+  {
+    "name": "clericUnlock.png",
+    "path": "resources/clericUnlock.png"
+  },
+  {
+    "name": "coin_sound.wav",
+    "path": "resources/coin_sound.wav"
+  },
+  {
+    "name": "coinicon.png",
+    "path": "resources/coinicon.png"
+  },
+  {
+    "name": "deterbals.wav",
+    "path": "resources/deterbals.wav"
+  },
+  {
+    "name": "determine.wav",
+    "path": "resources/determine.wav"
+  },
+  {
+    "name": "end.wav",
+    "path": "resources/end.wav"
+  },
+  {
+    "name": "fail_sound.wav",
+    "path": "resources/fail_sound.wav"
+  },
+  {
+    "name": "halfway.wav",
+    "path": "resources/halfway.wav"
+  },
+  {
+    "name": "halfway_sound.wav",
+    "path": "resources/halfway_sound.wav"
+  },
+  {
+    "name": "hom.wav",
+    "path": "resources/hom.wav"
+  },
+  {
+    "name": "how.wav",
+    "path": "resources/how.wav"
+  },
+  {
+    "name": "inn.wav",
+    "path": "resources/inn.wav"
+  },
+  {
+    "name": "innicon.png",
+    "path": "resources/innicon.png"
+  },
+  {
+    "name": "inninstructionsS.png",
+    "path": "resources/inninstructionsS.png"
+  },
+  {
+    "name": "instructions1.png",
+    "path": "resources/instructions1.png"
+  },
+  {
+    "name": "instructions2.png",
+    "path": "resources/instructions2.png"
+  },
+  {
+    "name": "instructions3.png",
+    "path": "resources/instructions3.png"
+  },
+  {
+    "name": "knightUnlock.wav",
+    "path": "resources/knightUnlock.wav"
+  },
+  {
+    "name": "page1.wav",
+    "path": "resources/page1.wav"
+  },
+  {
+    "name": "page2.wav",
+    "path": "resources/page2.wav"
+  },
+  {
+    "name": "page3.wav",
+    "path": "resources/page3.wav"
+  },
+  {
+    "name": "page4.wav",
+    "path": "resources/page4.wav"
+  },
+  {
+    "name": "page5.wav",
+    "path": "resources/page5.wav"
+  },
+  {
+    "name": "page6.wav",
+    "path": "resources/page6.wav"
+  },
+  {
+    "name": "page7.wav",
+    "path": "resources/page7.wav"
+  },
+  {
+    "name": "page8.wav",
+    "path": "resources/page8.wav"
+  },
+  {
+    "name": "page9.wav",
+    "path": "resources/page9.wav"
+  },
+  {
+    "name": "py.wav",
+    "path": "resources/py.wav"
+  },
+  {
+    "name": "randBlock.xlsx",
+    "path": "resources/randBlock.xlsx"
+  },
+  {
+    "name": "rangerUnlock.wav",
+    "path": "resources/rangerUnlock.wav"
+  },
+  {
+    "name": "rogueUnlock.wav",
+    "path": "resources/rogueUnlock.wav"
+  },
+  {
+    "name": "set.wav",
+    "path": "resources/set.wav"
+  },
+  {
+    "name": "tet.wav",
+    "path": "resources/tet.wav"
+  },
+  {
+    "name": "wizardUnlock.wav",
+    "path": "resources/wizardUnlock.wav"
+  }
+];
+
 psychoJS.start({
   expName: expName,
   expInfo: expInfo,
-  });
+  resources: roarResources
+});
 
 
 var frameDur;
