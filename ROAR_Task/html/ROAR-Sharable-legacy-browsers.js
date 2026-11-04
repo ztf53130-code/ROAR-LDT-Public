@@ -1598,7 +1598,7 @@ function InstLoopRoutineBegin(trials) {
     value: soundwav,
     secs: -1,
     });
-    pageloop.setVolume(1);
+    pageloop.setVolume(0);
     // keep track of which components have finished
     InstLoopComponents = [];
     InstLoopComponents.push(instloop_resp);
