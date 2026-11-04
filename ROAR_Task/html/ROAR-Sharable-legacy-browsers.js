@@ -71,6 +71,10 @@ const roarResources = [
     "path": "resources/25valley.wav"
   },
   {
+  "name": "simple-inst.png",
+  "path": "resources/simple-inst.png"
+  },
+  {
     "name": "2instructions1.png",
     "path": "resources/2instructions1.png"
   },
